@@ -29,3 +29,7 @@ svg rect {
 .countryLabelBg{
     fill: #30BCED;   /* country label background colour */
 }
+
+.country:hover {
+    fill: red;
+}
