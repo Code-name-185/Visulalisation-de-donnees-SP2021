@@ -110,9 +110,6 @@ function boxZoom(box, centroid, paddingPerc) {
         );
 }
 
-
-
-
 // on window resize
 $(window).resize(function () {
     // Resize SVG
@@ -134,6 +131,14 @@ var svg = d3
     .call(zoom)
     ;
 
+// get ISO_TO_Country data
+
+const isoCSV = "C:\Users\vmuld\Documents\UNIL\2S\Visualisation de données\Projet\Visulalisation-de-donnees-SP2021\ISO_TO_Country.csv";
+
+    fetch(isoCSV).then(text => {
+        const isodata = d3.csv(text);
+        console.log(isodata.length);
+    });
 
 // get map data
 d3.json(
@@ -210,7 +215,7 @@ d3.json(
             .attr("class", "countryName")
             .style("text-anchor", "middle")
             .attr("dx", 0)
-            .attr("dy", 0)
+            .attr("dy", -25)
             .text(function (d) {
                 return d.properties.name;
             })
