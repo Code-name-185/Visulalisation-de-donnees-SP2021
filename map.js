@@ -110,6 +110,9 @@ function boxZoom(box, centroid, paddingPerc) {
         );
 }
 
+
+
+
 // on window resize
 $(window).resize(function () {
     // Resize SVG
@@ -118,6 +121,18 @@ $(window).resize(function () {
         .attr("height", $("#map-holder").height())
         ;
     initiateZoom();
+});
+
+//extract data
+
+d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/ISO_TO_Country.csv", function(data){
+    console.log("DataI",data);
+});
+d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Country_data.csv", function(data){
+    console.log("DataC",data);
+});
+d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Party_data.csv", function(data){
+    console.log("DataP",data);
 });
 
 // create an SVG
@@ -131,16 +146,6 @@ var svg = d3
     .call(zoom)
     ;
 
-// get ISO_TO_Country data
-
-const isoCSV = "C:\Users\vmuld\Documents\UNIL\2S\Visualisation de données\Projet\Visulalisation-de-donnees-SP2021\ISO_TO_Country.csv";
-
-    fetch(isoCSV).then(text => {
-        const isodata = d3.csv(text);
-        console.log(isodata.length);
-    });
-
-// get map data
 d3.json(
     "https://raw.githubusercontent.com/andybarefoot/andybarefoot-www/master/maps/mapdata/custom50.json",
     function (json) {
