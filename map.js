@@ -125,16 +125,6 @@ $(window).resize(function () {
 
 //extract data
 
-d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/ISO_TO_Country.csv", function(data){
-    console.log("DataI",data);
-});
-d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Country_data.csv", function(data){
-    console.log("DataC",data);
-});
-d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Party_data.csv", function(data){
-    console.log("DataP",data);
-});
-
 // create an SVG
 var svg = d3
     .select("#map-holder")
