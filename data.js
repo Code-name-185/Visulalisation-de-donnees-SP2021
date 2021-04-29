@@ -1,13 +1,13 @@
-d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/ISO_TO_Country.csv", function(d){
+let DataI = d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/ISO_TO_Country.csv", function(d){
     return{
         iso3I : d.ISO,
         paysI : d.Country
     }
 }).then(dataI => {
-    console.log("DataI", dataI);
+    console.log("DataI2", dataI);
 });
 
-d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Country_data.csv", function(d){
+let DataC = d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Country_data.csv", function(d){
     return{
         paysC : d.Country,
         annee_election : d.Elec_year,
@@ -19,19 +19,19 @@ d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnee
         esp_vie : +d.Longevity
     }
 }).then(dataC => {
-    console.log("DataC", dataC);
+    console.log("DataC2", dataC);
 
     let empan_gdp = d3.extent(dataC, d => gdp)
     console.log("EmpanC GDP", empan_gdp);
 
 });
 
-d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Party_data.csv", function(d){
-    return{
-        d
-    }
-}).then(dataP => {
-    console.log("DataP", dataP);
-});
+//d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/Party_data.csv", function(d){
+//    return{
+//        d
+//    }
+//}).then(dataP => {
+//    console.log("DataP", dataP);
+//});
 
 
