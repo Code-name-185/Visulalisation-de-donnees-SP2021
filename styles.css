@@ -8,7 +8,6 @@ body {
   }
   
   .country {
-    fill: lightgreen;
     stroke: black;
     stroke-width: 0.05px;
   }
