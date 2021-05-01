@@ -68,14 +68,15 @@ svg.call(d3.zoom().on('zoom', () => {
 
 const colorScale =d3.scaleOrdinal();
 
-const colorValue = d => d.properties.c_r_Regime;
+const colorValue = d => d.properties.c_l_longevity;
 
 Promise.all([
     d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/ISO_to_all.csv"),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_OECD.csv"),
-    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime.csv")
-]).then(([topoJsonData,csvDataI, OECDData, regimeData]) => {
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime.csv"),
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_longevity.csv")
+]).then(([topoJsonData,csvDataI, OECDData, regimeData, longevityData]) => {
     
     const rowByINameI = {};
     csvDataI.forEach(d => {
@@ -91,11 +92,16 @@ Promise.all([
     regimeData.forEach(d => {
         regimerows[d.c_r_code] = d;
     });
+
+    const longevityrows = {};
+    longevityData.forEach(d => {
+        longevityrows[d.c_l_code] = d;
+    });
     
 const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries);
 
     countries.features.forEach(d =>{
-        Object.assign(d.properties, rowByINameI[d.id], OECDrows[d.id], regimerows[d.id]);
+        Object.assign(d.properties, rowByINameI[d.id], OECDrows[d.id], regimerows[d.id], longevityrows[d.id]);
     });
 
     colorScale
