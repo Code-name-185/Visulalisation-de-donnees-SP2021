@@ -1,4 +1,4 @@
-code,name,elec_year,WVS_LR_MedianVoter,OECD,polity2,FH_Regime,GDP,Longevity
+c_code,c_country_name,c_elec_year,c_WVS_LR_MedianVoter,c_OECD,polity2,c_FH_Regime,c_GDP,c_Longevity
 4,Afghanistan,2018,-99,0,-1,0,1734.7232,58.7
 8,Albania,2017,5.33,0,9,1,12316.0715,78
 24,Angola,2017,-99,0,-2,0,5725.3272,65.2
