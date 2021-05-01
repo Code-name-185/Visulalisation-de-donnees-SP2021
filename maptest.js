@@ -25,9 +25,9 @@ const colorLegend = (selection, props) => {
     
 
     const groups = selection.selectAll('.tick')
-      .data(colorScale.domain());
+        .data(colorScale.domain());
     const groupsEnter = groups
-      .enter().append('g')
+        .enter().append('g')
         .attr('class', 'tick');
     groupsEnter
       .merge(groups)
@@ -70,7 +70,6 @@ const colorScale =d3.scaleOrdinal();
 
 const colorValue = d => d.properties.c_OECD;
 
-
 Promise.all([
     d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/ISO_to_all.csv"),
@@ -95,7 +94,7 @@ Promise.all([
     
 
 //console.log(rowByINameI);
-console.log(rowByCNameC);
+//console.log(rowByCNameC);
 //console.log(rowByPNameP);
 
 const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries);
@@ -108,7 +107,7 @@ const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries)
         .domain(countries.features.map(colorValue))
         .domain(colorScale.domain().sort().reverse())
         .range(d3.schemeSpectral[colorScale.domain().length]);
-
+    
     colorLegendG.call(colorLegend, {
         colorScale,
         circleRadius: 8,
