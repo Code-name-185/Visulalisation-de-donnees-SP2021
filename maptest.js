@@ -68,7 +68,7 @@ svg.call(d3.zoom().on('zoom', () => {
 
 const colorScale =d3.scaleOrdinal();
 
-const colorValue = d => d.properties.c_rd_Dem_regime;
+const colorValue = d => d.properties.c_e_election;
 
 Promise.all([
     d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
@@ -76,8 +76,9 @@ Promise.all([
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_OECD.csv"),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime.csv"),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_longevity.csv"),
-    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime_democratic.csv")
-]).then(([topoJsonData,csvDataI, OECDData, regimeData, longevityData, regimedemData]) => {
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime_democratic.csv"),
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_fair_election.csv")
+]).then(([topoJsonData,csvDataI, OECDData, regimeData, longevityData, regimedemData, fairelectionData]) => {
     
     const rowByINameI = {};
     csvDataI.forEach(d => {
@@ -104,10 +105,15 @@ Promise.all([
         regimedemrows[d.c_rd_code] = d;
     });
 
+    const fairelectionrows = {};
+    fairelectionData.forEach(d => {
+        fairelectionrows[d.c_e_code] = d;
+    });
+
 const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries);
 
     countries.features.forEach(d =>{
-        Object.assign(d.properties, rowByINameI[d.id], OECDrows[d.id], regimerows[d.id], longevityrows[d.id], regimedemrows[d.id]);
+        Object.assign(d.properties, rowByINameI[d.id], OECDrows[d.id], regimerows[d.id], longevityrows[d.id], regimedemrows[d.id], fairelectionrows[d.id]);
     });
 
     colorScale
