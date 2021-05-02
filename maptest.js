@@ -68,7 +68,7 @@ svg.call(d3.zoom().on('zoom', () => {
 
 const colorScale =d3.scaleOrdinal();
 
-const colorValue = d => d.properties.c_e_election;
+const colorValue = d => d.properties.c_lb_lowerchambre;
 
 Promise.all([
     d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
@@ -77,8 +77,9 @@ Promise.all([
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime.csv"),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_longevity.csv"),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime_democratic.csv"),
-    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_fair_election.csv")
-]).then(([topoJsonData,csvDataI, OECDData, regimeData, longevityData, regimedemData, fairelectionData]) => {
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_fair_election.csv"),
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_lower_chamber.csv")
+]).then(([topoJsonData,csvDataI, OECDData, regimeData, longevityData, regimedemData, fairelectionData, lowerchamberData]) => {
     
     const rowByINameI = {};
     csvDataI.forEach(d => {
@@ -110,10 +111,16 @@ Promise.all([
         fairelectionrows[d.c_e_code] = d;
     });
 
+    const lowerchamberrows = {};
+    lowerchamberData.forEach(d => {
+        lowerchamberrows[d.c_lb_code] = d;
+    });
+
 const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries);
 
     countries.features.forEach(d =>{
-        Object.assign(d.properties, rowByINameI[d.id], OECDrows[d.id], regimerows[d.id], longevityrows[d.id], regimedemrows[d.id], fairelectionrows[d.id]);
+        Object.assign(d.properties, rowByINameI[d.id], OECDrows[d.id], regimerows[d.id], longevityrows[d.id], 
+            regimedemrows[d.id], fairelectionrows[d.id], lowerchamberrows[d.id]);
     });
 
     colorScale
