@@ -13,7 +13,7 @@ body {
 }
 
 .country:hover {
-  fill: red;
+  stroke-width: 0.75px;
 }
 
 .tick text {
@@ -25,4 +25,17 @@ body {
 .tick circle {
   stroke: black;
   stroke-opacity: 0.5;
+}
+
+#Information {
+  font-size: 1em;
+  text-align: center;
+}
+
+#Information select {
+  font-size: 1rem;
+}
+
+#Information select option {
+  font-size: 0.5rem;
 }

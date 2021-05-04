@@ -1,27 +1,26 @@
-(function (d3,topojson) {
-'use strict';
+function  draw() {
 
 const colorLegend = (selection, props) => {
     const {                      
-      colorScale,                
-      circleRadius,
-      spacing,                   
-      textOffset,
-      backgroundRectWidth        
+        colorScale,                
+        circleRadius,
+        spacing,                   
+        textOffset,
+        backgroundRectWidth        
     } = props; 
     
     const backgroundRect = selection.selectAll('rect')
-      .data([null]);             
+        .data([null]);             
     const n = colorScale.domain().length; 
     backgroundRect.enter().append('rect')
-      .merge(backgroundRect)
-        .attr('x', -circleRadius * 2)   
-        .attr('y', -circleRadius * 2)   
-        .attr('rx', circleRadius * 2)   
-        .attr('width', backgroundRectWidth)
-        .attr('height', spacing * n + circleRadius * 2) 
-        .attr('fill', 'white')
-        .attr('opacity', 0.8);
+        .merge(backgroundRect)
+            .attr('x', -circleRadius * 2)   
+            .attr('y', -circleRadius * 2)   
+            .attr('rx', circleRadius * 2)   
+            .attr('width', backgroundRectWidth)
+            .attr('height', spacing * n + circleRadius * 2) 
+            .attr('fill', 'white')
+            .attr('opacity', 0.8);
     
 
     const groups = selection.selectAll('.tick')
@@ -30,25 +29,27 @@ const colorLegend = (selection, props) => {
         .enter().append('g')
         .attr('class', 'tick');
     groupsEnter
-      .merge(groups)
-        .attr('transform', (d, i) =>    
-          `translate(0, ${i * spacing})`  
+        .merge(groups)
+            .attr('transform', (d, i) =>    
+            `translate(0, ${i * spacing})`  
         );
     groups.exit().remove();
     
     groupsEnter.append('circle')
-      .merge(groups.select('circle')) 
-        .attr('r', circleRadius)
-        .attr('fill', colorScale);      
+        .merge(groups.select('circle')) 
+            .attr('r', circleRadius)
+            .attr('fill', colorScale);      
     
     groupsEnter.append('text')
-      .merge(groups.select('text'))   
-        .text(d => d)
-        .attr('dy', '0.32em')
-        .attr('x', textOffset);
-  };
+        .merge(groups.select('text'))   
+            .text(d => d)
+            .attr('dy', '0.32em')
+            .attr('x', textOffset);
+};
 
 const svg = d3.select('svg');
+
+const mapwithdata = (i) => {
 
 const projection = d3.geoNaturalEarth1();
 const pathGenerator = d3.geoPath().projection(projection);
@@ -66,9 +67,10 @@ svg.call(d3.zoom().on('zoom', () => {
     g.attr('transform', d3.event.transform);
 }));
 
-const colorScale =d3.scaleOrdinal();
+const values = [d => d.properties.c_o_OECD, d => d.properties.c_r_Regime, d => d.properties.c_l_longevity, d => d.properties.c_rd_Dem_regime, d => d.properties.c_e_election, 
+    d => d.properties.c_lb_lowerchambre, d => d.properties.c_gp_governement_parties, d => d.properties.c_bp_barriers_parties];
 
-const colorValue = d => d.properties.c_gp_governement_parties;
+const colorScale = d3.scaleOrdinal();
 
 Promise.all([
     d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
@@ -79,8 +81,9 @@ Promise.all([
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime_democratic.csv"),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_fair_election.csv"),
     d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_lower_chamber.csv"),
-    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_governement_parties.csv")
-]).then(([topoJsonData, csvDataI, OECDData, regimeData, longevityData, regimedemData, fairelectionData, lowerchamberData, governementpartiesData]) => {
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_governement_parties.csv"),
+    d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_barriers_parties.csv")
+]).then(([topoJsonData, csvDataI, OECDData, regimeData, longevityData, regimedemData, fairelectionData, lowerchamberData, governementpartiesData, barrierspartiesData]) => {
     
     const rowByINameI = {};
     csvDataI.forEach(d => {
@@ -122,11 +125,19 @@ Promise.all([
         governementpartiesrows[d.c_gp_code] = d;
     });
 
+    const barrierspartiesrows = {};
+    barrierspartiesData.forEach(d => {
+        barrierspartiesrows[d.c_bp_code] = d;
+    });
+
+    const colorValue =  values[i];
+
 const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries);
 
     countries.features.forEach(d =>{
         Object.assign(d.properties, rowByINameI[d.id], OECDrows[d.id], regimerows[d.id], longevityrows[d.id], 
-            regimedemrows[d.id], fairelectionrows[d.id], lowerchamberrows[d.id], governementpartiesrows[d.id]);
+            regimedemrows[d.id], fairelectionrows[d.id], lowerchamberrows[d.id], governementpartiesrows[d.id],
+            barrierspartiesrows[d.id]);
     });
 
     colorScale
@@ -139,7 +150,7 @@ const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries)
         circleRadius: 8,
         spacing: 20,
         textOffset: 12,
-        backgroundRectWidth: 200
+        backgroundRectWidth: 350
     });
 
     g.selectAll('path').data(countries.features)
@@ -149,7 +160,23 @@ const countries = topojson.feature(topoJsonData, topoJsonData.objects.countries)
         .attr("fill", d => colorScale(colorValue(d)))
         .append("title")
             .text(d => d.properties.name)
+    
 });
 
+}
 
-}(d3,topojson));
+function init() {
+        
+    d3.select('#Information').on('change', function() {
+        choice = d3.event.target.value;
+        mapwithdata(choice)
+    });
+}
+
+init();
+
+mapwithdata(0)
+
+}
+
+draw();
