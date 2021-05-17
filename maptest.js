@@ -71,15 +71,15 @@ const mapwithdata = (i) => {
 
     Promise.all([
         d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/ISO_to_all.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_OECD.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_longevity.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_regime_democratic.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_fair_election.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_lower_chamber.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_governement_parties.csv"),
-        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/country_barriers_parties.csv")
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/ISO_to_all.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_OECD.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_regime.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_longevity.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_regime_democratic.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_fair_election.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_lower_chamber.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_governement_parties.csv"),
+        d3.csv("https://raw.githubusercontent.com/Code-name-185/Visulalisation-de-donnees-SP2021/main/data/country_barriers_parties.csv")
     ]).then(([topoJsonData, csvDataI, OECDData, regimeData, longevityData, regimedemData, fairelectionData, lowerchamberData, governementpartiesData, barrierspartiesData]) => {
     
         const rowByINameI = {};
