@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Let's make a map with D3.js!</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/d3@5.6.0/dist/d3.min.js"></script>
     <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
@@ -13,6 +12,23 @@
 </head>
 
 <body>
+    <div>
+    <label for="Information"></label>
+    <select id="Information">
+        <option value="0" >Membres de l'OCDE</option>
+        <option value="1" >Régime politique</option>
+        <option value="2" >Espérance de vie</option>
+        <option value="3" >Régime démocratique</option>
+        <option value="4" >Elections libre</option>
+        <option value="5" >Système d'élection de la chambre basse</option>
+        <option value="6" >Parties au gouvernement</option>
+        <option value="7" >Barrières aux parties</option>
+    </select>
+    </div>
+    <div class="carte"></div>
+        <svg width="960" height="500"></svg>
+        <script src="maptest.js"></script>
+    </div>
     <div class="container">
         <header>
             <h1>How is democracy <br>doing around the<br> world?</h1>
