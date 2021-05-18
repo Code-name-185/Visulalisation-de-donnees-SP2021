@@ -41,10 +41,11 @@ const colorLegend = (selection, props) => {
             .attr('fill', colorScale);      
     
     groupsEnter.append('text')
-        .merge(groups.select('text'))   
+        .merge(groups.select('text'))
             .text(d => d)
             .attr('dy', '0.32em')
             .attr('x', textOffset);
+
 };
 
 const mapwithdata = (i) => {

@@ -1,130 +1,250 @@
-c_o_code,c_o_OECD
-4,non-membre
-8,non-membre
-24,non-membre
-12,non-membre
-32,non-membre
-51,non-membre
-36,membre
-40,membre
-31,non-membre
-108,non-membre
-56,membre
-204,non-membre
-854,non-membre
-50,non-membre
-100,non-membre
-48,non-membre
-44,non-membre
-112,non-membre
-84,non-membre
-52,non-membre
-64,non-membre
-72,non-membre
-124,membre
-756,membre
-384,non-membre
-120,non-membre
-178,non-membre
-170,non-membre
-174,non-membre
-132,non-membre
-196,non-membre
-116,non-membre
-203,membre
-276,membre
-262,non-membre
-208,membre
-818,non-membre
-724,membre
-233,membre
-231,non-membre
-246,membre
-242,non-membre
-250,membre
-266,non-membre
-191,non-membre
-826,membre
-268,non-membre
-324,non-membre
-270,non-membre
-226,non-membre
-300,membre
-308,non-membre
-328,non-membre
-222,non-membre
-332,non-membre
-348,membre
-360,non-membre
-356,non-membre
-748,non-membre
-372,membre
-364,non-membre
-368,non-membre
-352,membre
-376,membre
-380,membre
-388,non-membre
-400,non-membre
-392,membre
-398,non-membre
-417,non-membre
-410,membre
-414,non-membre
-418,non-membre
-422,non-membre
-426,non-membre
-440,non-membre
-442,membre
-428,non-membre
-446,non-membre
-504,non-membre
-498,non-membre
-462,non-membre
-484,membre
-470,non-membre
-104,non-membre
-499,non-membre
-496,non-membre
-478,non-membre
-480,non-membre
-458,non-membre
-566,non-membre
-528,membre
-524,non-membre
-578,membre
-554,membre
-586,non-membre
-598,non-membre
-604,non-membre
-608,non-membre
-616,membre
-620,membre
-642,non-membre
-643,non-membre
-646,non-membre
-882,non-membre
-678,non-membre
-702,non-membre
-688,non-membre
-90,non-membre
-703,membre
-705,membre
-740,non-membre
-710,non-membre
-752,membre
-760,non-membre
-768,non-membre
-764,non-membre
-762,non-membre
-795,non-membre
-626,non-membre
-788,non-membre
-792,membre
-804,non-membre
-840,membre
-860,non-membre
-862,non-membre
-704,non-membre
-548,non-membre
-716,non-membre
+c_o_OECD,ISO_to_all.country_code
+not member,4
+not member,8
+missing data,248
+not member,24
+not member,12
+not member,32
+missing data,16
+not member,51
+missing data,20
+member,36
+member,40
+missing data,660
+not member,31
+missing data,10
+not member,108
+missing data,28
+member,56
+not member,204
+not member,854
+missing data,533
+not member,50
+not member,100
+not member,48
+not member,44
+not member,112
+not member,84
+not member,52
+not member,64
+not member,72
+member,124
+not member,384
+missing data,60
+not member,120
+not member,178
+missing data,68
+not member,170
+missing data,535
+not member,174
+missing data,70
+not member,132
+not member,196
+missing data,74
+not member,116
+missing data,76
+member,203
+missing data,86
+member,276
+missing data,96
+not member,262
+member,208
+not member,818
+member,233
+not member,231
+member,246
+not member,242
+missing data,136
+member,250
+missing data,140
+not member,266
+missing data,148
+not member,191
+missing data,152
+missing data,156
+not member,268
+missing data,162
+not member,324
+missing data,166
+not member,270
+not member,226
+member,300
+not member,308
+missing data,180
+not member,328
+missing data,184
+not member,222
+missing data,188
+not member,332
+member,348
+not member,360
+missing data,192
+not member,356
+missing data,531
+not member,748
+member,372
+not member,364
+not member,368
+member,352
+missing data,212
+member,376
+missing data,214
+member,380
+missing data,218
+not member,388
+not member,400
+member,392
+not member,398
+missing data,232
+not member,417
+member,410
+not member,414
+not member,418
+missing data,238
+not member,422
+missing data,234
+not member,426
+not member,440
+not member,428
+missing data,254
+missing data,258
+missing data,260
+missing data,288
+missing data,292
+missing data,304
+missing data,312
+missing data,316
+missing data,320
+missing data,831
+missing data,624
+missing data,334
+missing data,336
+missing data,340
+missing data,344
+missing data,833
+missing data,832
+missing data,404
+missing data,296
+missing data,408
+missing data,430
+missing data,434
+missing data,438
+member,442
+not member,446
+missing data,450
+missing data,454
+not member,458
+not member,462
+missing data,466
+not member,470
+missing data,584
+missing data,474
+not member,478
+not member,480
+missing data,175
+member,484
+missing data,583
+not member,498
+missing data,492
+not member,496
+not member,499
+missing data,500
+not member,504
+missing data,508
+not member,104
+missing data,516
+missing data,520
+not member,524
+member,528
+missing data,540
+member,554
+missing data,558
+missing data,562
+not member,566
+missing data,570
+missing data,574
+missing data,807
+missing data,580
+member,578
+missing data,512
+not member,586
+missing data,585
+missing data,275
+missing data,591
+not member,598
+missing data,600
+not member,604
+not member,608
+missing data,612
+member,616
+member,620
+missing data,630
+missing data,634
+missing data,638
+not member,642
+not member,643
+not member,646
+missing data,652
+missing data,654
+missing data,659
+missing data,662
+missing data,663
+missing data,666
+missing data,670
+not member,882
+missing data,674
+not member,678
+missing data,682
+missing data,686
+not member,688
+missing data,690
+missing data,694
+not member,702
+missing data,534
+member,703
+member,705
+not member,90
+missing data,706
+not member,710
+missing data,239
+missing data,728
+member,724
+missing data,144
+missing data,729
+not member,740
+missing data,744
+member,752
+member,756
+not member,760
+missing data,158
+not member,762
+missing data,834
+not member,764
+not member,626
+not member,768
+missing data,772
+missing data,776
+missing data,780
+not member,788
+member,792
+not member,795
+missing data,796
+missing data,798
+missing data,800
+not member,804
+missing data,784
+member,826
+member,840
+missing data,581
+missing data,858
+not member,860
+not member,548
+not member,862
+not member,704
+missing data,92
+missing data,850
+missing data,876
+missing data,732
+missing data,887
+missing data,894
+not member,716
