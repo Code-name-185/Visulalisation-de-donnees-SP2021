@@ -1,250 +1,250 @@
-c_o_OECD,c_o_code
-not member,4
-not member,8
-missing data,248
-not member,24
-not member,12
-not member,32
-missing data,16
-not member,51
-missing data,20
-member,36
-member,40
-missing data,660
-not member,31
-missing data,10
-not member,108
-missing data,28
-member,56
-not member,204
-not member,854
-missing data,533
-not member,50
-not member,100
-not member,48
-not member,44
-not member,112
-not member,84
-not member,52
-not member,64
-not member,72
-member,124
-not member,384
-missing data,60
-not member,120
-not member,178
-missing data,68
-not member,170
-missing data,535
-not member,174
-missing data,70
-not member,132
-not member,196
-missing data,74
-not member,116
-missing data,76
-member,203
-missing data,86
-member,276
-missing data,96
-not member,262
-member,208
-not member,818
-member,233
-not member,231
-member,246
-not member,242
-missing data,136
-member,250
-missing data,140
-not member,266
-missing data,148
-not member,191
-missing data,152
-missing data,156
-not member,268
-missing data,162
-not member,324
-missing data,166
-not member,270
-not member,226
-member,300
-not member,308
-missing data,180
-not member,328
-missing data,184
-not member,222
-missing data,188
-not member,332
-member,348
-not member,360
-missing data,192
-not member,356
-missing data,531
-not member,748
-member,372
-not member,364
-not member,368
-member,352
-missing data,212
-member,376
-missing data,214
-member,380
-missing data,218
-not member,388
-not member,400
-member,392
-not member,398
-missing data,232
-not member,417
-member,410
-not member,414
-not member,418
-missing data,238
-not member,422
-missing data,234
-not member,426
-not member,440
-not member,428
-missing data,254
-missing data,258
-missing data,260
-missing data,288
-missing data,292
-missing data,304
-missing data,312
-missing data,316
-missing data,320
-missing data,831
-missing data,624
-missing data,334
-missing data,336
-missing data,340
-missing data,344
-missing data,833
-missing data,832
-missing data,404
-missing data,296
-missing data,408
-missing data,430
-missing data,434
-missing data,438
-member,442
-not member,446
-missing data,450
-missing data,454
-not member,458
-not member,462
-missing data,466
-not member,470
-missing data,584
-missing data,474
-not member,478
-not member,480
-missing data,175
-member,484
-missing data,583
-not member,498
-missing data,492
-not member,496
-not member,499
-missing data,500
-not member,504
-missing data,508
-not member,104
-missing data,516
-missing data,520
-not member,524
-member,528
-missing data,540
-member,554
-missing data,558
-missing data,562
-not member,566
-missing data,570
-missing data,574
-missing data,807
-missing data,580
-member,578
-missing data,512
-not member,586
-missing data,585
-missing data,275
-missing data,591
-not member,598
-missing data,600
-not member,604
-not member,608
-missing data,612
-member,616
-member,620
-missing data,630
-missing data,634
-missing data,638
-not member,642
-not member,643
-not member,646
-missing data,652
-missing data,654
-missing data,659
-missing data,662
-missing data,663
-missing data,666
-missing data,670
-not member,882
-missing data,674
-not member,678
-missing data,682
-missing data,686
-not member,688
-missing data,690
-missing data,694
-not member,702
-missing data,534
-member,703
-member,705
-not member,90
-missing data,706
-not member,710
-missing data,239
-missing data,728
-member,724
-missing data,144
-missing data,729
-not member,740
-missing data,744
-member,752
-member,756
-not member,760
-missing data,158
-not member,762
-missing data,834
-not member,764
-not member,626
-not member,768
-missing data,772
-missing data,776
-missing data,780
-not member,788
-member,792
-not member,795
-missing data,796
-missing data,798
-missing data,800
-not member,804
-missing data,784
-member,826
-member,840
-missing data,581
-missing data,858
-not member,860
-not member,548
-not member,862
-not member,704
-missing data,92
-missing data,850
-missing data,876
-missing data,732
-missing data,887
-missing data,894
-not member,716
+c_o_code,c_o_OECD
+4,not member
+8,not member
+248,missing data
+24,not member
+12,not member
+32,not member
+16,missing data
+51,not member
+20,missing data
+36,member
+40,member
+660,missing data
+31,not member
+10,missing data
+108,not member
+28,missing data
+56,member
+204,not member
+854,not member
+533,missing data
+50,not member
+100,not member
+48,not member
+44,not member
+112,not member
+84,not member
+52,not member
+64,not member
+72,not member
+124,member
+384,not member
+60,missing data
+120,not member
+178,not member
+68,missing data
+170,not member
+535,missing data
+174,not member
+70,missing data
+132,not member
+196,not member
+74,missing data
+116,not member
+76,missing data
+203,member
+86,missing data
+276,member
+96,missing data
+262,not member
+208,member
+818,not member
+233,member
+231,not member
+246,member
+242,not member
+136,missing data
+250,member
+140,missing data
+266,not member
+148,missing data
+191,not member
+152,missing data
+156,missing data
+268,not member
+162,missing data
+324,not member
+166,missing data
+270,not member
+226,not member
+300,member
+308,not member
+180,missing data
+328,not member
+184,missing data
+222,not member
+188,missing data
+332,not member
+348,member
+360,not member
+192,missing data
+356,not member
+531,missing data
+748,not member
+372,member
+364,not member
+368,not member
+352,member
+212,missing data
+376,member
+214,missing data
+380,member
+218,missing data
+388,not member
+400,not member
+392,member
+398,not member
+232,missing data
+417,not member
+410,member
+414,not member
+418,not member
+238,missing data
+422,not member
+234,missing data
+426,not member
+440,not member
+428,not member
+254,missing data
+258,missing data
+260,missing data
+288,missing data
+292,missing data
+304,missing data
+312,missing data
+316,missing data
+320,missing data
+831,missing data
+624,missing data
+334,missing data
+336,missing data
+340,missing data
+344,missing data
+833,missing data
+832,missing data
+404,missing data
+296,missing data
+408,missing data
+430,missing data
+434,missing data
+438,missing data
+442,member
+446,not member
+450,missing data
+454,missing data
+458,not member
+462,not member
+466,missing data
+470,not member
+584,missing data
+474,missing data
+478,not member
+480,not member
+175,missing data
+484,member
+583,missing data
+498,not member
+492,missing data
+496,not member
+499,not member
+500,missing data
+504,not member
+508,missing data
+104,not member
+516,missing data
+520,missing data
+524,not member
+528,member
+540,missing data
+554,member
+558,missing data
+562,missing data
+566,not member
+570,missing data
+574,missing data
+807,missing data
+580,missing data
+578,member
+512,missing data
+586,not member
+585,missing data
+275,missing data
+591,missing data
+598,not member
+600,missing data
+604,not member
+608,not member
+612,missing data
+616,member
+620,member
+630,missing data
+634,missing data
+638,missing data
+642,not member
+643,not member
+646,not member
+652,missing data
+654,missing data
+659,missing data
+662,missing data
+663,missing data
+666,missing data
+670,missing data
+882,not member
+674,missing data
+678,not member
+682,missing data
+686,missing data
+688,not member
+690,missing data
+694,missing data
+702,not member
+534,missing data
+703,member
+705,member
+90,not member
+706,missing data
+710,not member
+239,missing data
+728,missing data
+724,member
+144,missing data
+729,missing data
+740,not member
+744,missing data
+752,member
+756,member
+760,not member
+158,missing data
+762,not member
+834,missing data
+764,not member
+626,not member
+768,not member
+772,missing data
+776,missing data
+780,missing data
+788,not member
+792,member
+795,not member
+796,missing data
+798,missing data
+800,missing data
+804,not member
+784,missing data
+826,member
+840,member
+581,missing data
+858,missing data
+860,not member
+548,not member
+862,not member
+704,not member
+92,missing data
+850,missing data
+876,missing data
+732,missing data
+887,missing data
+894,missing data
+716,not member
