@@ -51,7 +51,7 @@ const mapwithdata = (i) => {
 
     d3.select("#carte").remove();
 
-    const svg = d3.select('svg');
+    const svg = d3.select('svg'); 
 
     const projection = d3.geoNaturalEarth1();
     const pathGenerator = d3.geoPath().projection(projection);
@@ -144,7 +144,7 @@ const mapwithdata = (i) => {
 
         colorScale
             .domain(countries.features.map(colorValue))
-            .domain(colorScale.domain().sort().reverse())
+            .domain(colorScale.domain().sort())
             .range(d3.schemeSpectral[colorScale.domain().length]);
         
         colorLegendG.call(colorLegend, {
