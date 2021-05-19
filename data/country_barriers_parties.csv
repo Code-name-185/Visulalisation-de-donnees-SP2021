@@ -14,7 +14,7 @@ c_bp_code,c_bp_barriers_parties
 854,No barriers
 50,Modest barriers
 100,No barriers
-48,Only governmentaffiliated parties
+48,Government affiliated 
 70,Modest barriers
 112,Significant obstacles
 68,No barriers
@@ -66,7 +66,7 @@ c_bp_code,c_bp_barriers_parties
 360,No barriers
 356,No barriers
 372,No barriers
-364,Only governmentaffiliated parties
+364,Government affiliated 
 748,Parties are not allowed
 368,No barriers
 352,No barriers
@@ -80,7 +80,7 @@ c_bp_code,c_bp_barriers_parties
 417,No barriers
 410,No barriers
 414,Parties are not allowed
-418,Only governmentaffiliated parties
+418,Government affiliated 
 422,No barriers
 434,Modest barriers
 426,No barriers
@@ -137,7 +137,7 @@ c_bp_code,c_bp_barriers_parties
 756,No barriers
 760,Significant obstacles
 158,No barriers
-762,Only governmentaffiliated parties
+762,Government affiliated 
 834,No barriers
 764,Significant obstacles
 626,No barriers
@@ -145,13 +145,13 @@ c_bp_code,c_bp_barriers_parties
 780,No barriers
 788,No barriers
 792,Modest barriers
-795,Only governmentaffiliated parties
+795,Government affiliated 
 800,Modest barriers
 804,Modest barriers
 826,No barriers
 840,No barriers
 858,No barriers
-860,Only governmentaffiliated parties
+860,Government affiliated 
 548,No barriers
 862,Significant obstacles
 704,Parties are not allowed
