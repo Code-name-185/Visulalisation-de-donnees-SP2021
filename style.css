@@ -27,7 +27,7 @@ header {
     background-color: white;
     height: 400px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 
@@ -64,14 +64,13 @@ h2 {
 }
 
 h3 {
-    margin-left: 9%;
+    margin-left: 14%;
     margin-top: -280px;
-    max-width: 500px;
+    
 }
 
 h5 {
-
-  margin-left: 2%;
+  margin-left: 6px;
   margin-top: 5%;
 
 }
@@ -145,6 +144,8 @@ body {
   }
   
   #Information {
+    width: fit-content;
+    margin-left: -20px;
     font-size: 1em;
     text-align: center;
   }
