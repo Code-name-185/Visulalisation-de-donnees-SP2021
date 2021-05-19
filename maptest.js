@@ -43,8 +43,8 @@ const colorLegend = (selection, props) => {
             .attr('r', circleRadius)
             .attr('fill', d => {
                 if(d == undefined){return "silver"}
-                else{return colorScale(colorValue)}
-            })
+                else{return colorScale(d)}
+            });
                
     groupsEnter.append('text')
         .merge(groups.select('text'))
@@ -54,7 +54,7 @@ const colorLegend = (selection, props) => {
             })
             .attr('dy', '0.32em')
             .attr('x', textOffset)
-            .attr("font-size", "50");
+            .style('font-size', "25px");
 
 };
 
