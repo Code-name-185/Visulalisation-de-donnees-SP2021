@@ -2,7 +2,8 @@ function  draw() {
 
 const colorLegend = (selection, props) => {
     const {                      
-        colorScale,                
+        colorScale, 
+        colorValue,          
         circleRadius,
         spacing,                   
         textOffset,
@@ -34,24 +35,34 @@ const colorLegend = (selection, props) => {
             `translate(0, ${i * spacing})`  
         );
     groups.exit().remove();
-    
+
+
+
     groupsEnter.append('circle')
         .merge(groups.select('circle')) 
             .attr('r', circleRadius)
-            .attr('fill', colorScale);      
-    
+            .attr('fill', d => {
+                if(d == undefined){return "silver"}
+                else{return colorScale(colorValue)}
+            })
+               
     groupsEnter.append('text')
-        .merge(groups.select('text'))   
-            .text(d => d)
+        .merge(groups.select('text'))
+            .text(d => {
+                if(d == undefined){return "missing data"}
+                else{return d}
+            })
             .attr('dy', '0.32em')
-            .attr('x', textOffset);
+            .attr('x', textOffset)
+            .attr("font-size", "50");
+
 };
 
 const mapwithdata = (i) => {
 
-    d3.select("#carte").remove();
+    d3.select("svg").html("");
 
-    const svg = d3.select('svg');
+    const svg = d3.select('svg'); 
 
     const projection = d3.geoNaturalEarth1();
     const pathGenerator = d3.geoPath().projection(projection);
@@ -59,7 +70,7 @@ const mapwithdata = (i) => {
     const g = svg.append('g');
 
     const colorLegendG = svg.append("g")
-        .attr("transform", "translate(30,300)");
+        .attr("transform", "translate(0,350)");
 
     g.append('path')
         .attr('class', 'sphere')
@@ -144,14 +155,15 @@ const mapwithdata = (i) => {
 
         colorScale
             .domain(countries.features.map(colorValue))
-            .domain(colorScale.domain().sort().reverse())
+            .domain(colorScale.domain().sort())
             .range(d3.schemeSpectral[colorScale.domain().length]);
-        
+
         colorLegendG.call(colorLegend, {
             colorScale,
-            circleRadius: 8,
-            spacing: 20,
-            textOffset: 12,
+            colorValue,
+            circleRadius: 18,
+            spacing: 40,
+            textOffset: 24,
             backgroundRectWidth: 350
         });
 
@@ -159,10 +171,12 @@ const mapwithdata = (i) => {
             .enter().append('path')
             .attr('class', 'country')
             .attr('d', pathGenerator)
-            .attr("fill", d => colorScale(colorValue(d)))
+            .attr("fill", d => { 
+                if(colorValue(d) == undefined){return "silver"}
+                else{return colorScale(colorValue(d))}
+           })
             .append("title")
                 .text(d => d.properties.name)
-    
     });
 
 }
