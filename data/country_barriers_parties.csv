@@ -1,159 +1,159 @@
 c_bp_code,c_bp_barriers_parties
-4,pas de barrieres
-24,pas de barrieres
-8,pas de barrieres
-32,pas de barrieres
-12,partis face a des obstacles modestes
-51,pas de barrieres
-36,pas de barrieres
-40,pas de barrieres
-31,partis confrontes a des obstacles importants
-108,partis face a des obstacles modestes
-56,pas de barrieres
-204,pas de barrieres
-854,pas de barrieres
-50,partis face a des obstacles modestes
-100,pas de barrieres
-48,seuls les partis affilies au gouvernement
-70,partis face a des obstacles modestes
-112,partis confrontes a des obstacles importants
-68,pas de barrieres
-52,pas de barrieres
-76,pas de barrieres
-64,partis face a des obstacles modestes
-72,pas de barrieres
-124,pas de barrieres
-152,pas de barrieres
-384,pas de barrieres
-120,partis face a des obstacles modestes
-180,partis face a des obstacles modestes
-178,partis face a des obstacles modestes
-170,pas de barrieres
-174,pas de barrieres
-132,pas de barrieres
-188,pas de barrieres
-192,parties pas autorises
-196,pas de barrieres
-203,pas de barrieres
-276,pas de barrieres
-116,partis face a des obstacles modestes
-262,partis confrontes a des obstacles importants
-208,pas de barrieres
-214,pas de barrieres
-218,pas de barrieres
-148,partis face a des obstacles modestes
-818,partis confrontes a des obstacles importants
-232,parties pas autorises
-233,pas de barrieres
-231,partis face a des obstacles modestes
-246,pas de barrieres
-242,partis face a des obstacles modestes
-250,pas de barrieres
-266,pas de barrieres
-268,pas de barrieres
-288,pas de barrieres
-191,pas de barrieres
-324,pas de barrieres
-270,pas de barrieres
-624,pas de barrieres
-226,partis confrontes a des obstacles importants
-300,pas de barrieres
-320,pas de barrieres
-328,pas de barrieres
-332,pas de barrieres
-348,pas de barrieres
-222,pas de barrieres
-360,pas de barrieres
-356,pas de barrieres
-372,pas de barrieres
-364,seuls les partis affilies au gouvernement
-748,parties pas autorises
-368,pas de barrieres
-352,pas de barrieres
-376,pas de barrieres
-380,pas de barrieres
-388,pas de barrieres
-400,partis face a des obstacles modestes
-392,pas de barrieres
-398,partis confrontes a des obstacles importants
-404,partis face a des obstacles modestes
-417,pas de barrieres
-410,pas de barrieres
-414,parties pas autorises
-418,seuls les partis affilies au gouvernement
-422,pas de barrieres
-434,partis face a des obstacles modestes
-426,pas de barrieres
-440,pas de barrieres
-442,pas de barrieres
-428,pas de barrieres
-446,pas de barrieres
-504,pas de barrieres
-498,pas de barrieres
-450,pas de barrieres
-462,partis face a des obstacles modestes
-484,pas de barrieres
-466,pas de barrieres
-470,pas de barrieres
-104,partis face a des obstacles modestes
-499,pas de barrieres
-496,pas de barrieres
-508,pas de barrieres
-478,partis face a des obstacles modestes
-480,pas de barrieres
-454,pas de barrieres
-458,pas de barrieres
-516,pas de barrieres
-566,pas de barrieres
-558,partis confrontes a des obstacles importants
-528,pas de barrieres
-524,pas de barrieres
-554,pas de barrieres
-578,pas de barrieres
-586,pas de barrieres
-591,pas de barrieres
-598,partis face a des obstacles modestes
-600,pas de barrieres
-604,pas de barrieres
-608,pas de barrieres
-616,pas de barrieres
-620,pas de barrieres
-642,pas de barrieres
-643,partis face a des obstacles modestes
-646,partis confrontes a des obstacles importants
-678,pas de barrieres
-688,partis face a des obstacles modestes
-694,pas de barrieres
-702,partis face a des obstacles modestes
-703,pas de barrieres
-705,pas de barrieres
-90,pas de barrieres
-706,pas de barrieres
-710,pas de barrieres
-724,pas de barrieres
-729,partis face a des obstacles modestes
-740,pas de barrieres
-752,pas de barrieres
-756,pas de barrieres
-760,partis confrontes a des obstacles importants
-158,pas de barrieres
-762,seuls les partis affilies au gouvernement
-834,pas de barrieres
-764,partis confrontes a des obstacles importants
-626,pas de barrieres
-768,pas de barrieres
-780,pas de barrieres
-788,pas de barrieres
-792,partis face a des obstacles modestes
-795,seuls les partis affilies au gouvernement
-800,partis face a des obstacles modestes
-804,partis face a des obstacles modestes
-826,pas de barrieres
-840,pas de barrieres
-858,pas de barrieres
-860,seuls les partis affilies au gouvernement
-548,pas de barrieres
-862,partis confrontes a des obstacles importants
-704,parties pas autorises
-894,pas de barrieres
-716,pas de barrieres
+4,No barriers
+24,No barriers
+8,No barriers
+32,No barriers
+12,Modest barriers
+51,No barriers
+36,No barriers
+40,No barriers
+31,Significant obstacles
+108,Modest barriers
+56,No barriers
+204,No barriers
+854,No barriers
+50,Modest barriers
+100,No barriers
+48,Only governmentaffiliated parties
+70,Modest barriers
+112,Significant obstacles
+68,No barriers
+52,No barriers
+76,No barriers
+64,Modest barriers
+72,No barriers
+124,No barriers
+152,No barriers
+384,No barriers
+120,Modest barriers
+180,Modest barriers
+178,Modest barriers
+170,No barriers
+174,No barriers
+132,No barriers
+188,No barriers
+192,Parties are not allowed
+196,No barriers
+203,No barriers
+276,No barriers
+116,Modest barriers
+262,Significant obstacles
+208,No barriers
+214,No barriers
+218,No barriers
+148,Modest barriers
+818,Significant obstacles
+232,Parties are not allowed
+233,No barriers
+231,Modest barriers
+246,No barriers
+242,Modest barriers
+250,No barriers
+266,No barriers
+268,No barriers
+288,No barriers
+191,No barriers
+324,No barriers
+270,No barriers
+624,No barriers
+226,Significant obstacles
+300,No barriers
+320,No barriers
+328,No barriers
+332,No barriers
+348,No barriers
+222,No barriers
+360,No barriers
+356,No barriers
+372,No barriers
+364,Only governmentaffiliated parties
+748,Parties are not allowed
+368,No barriers
+352,No barriers
+376,No barriers
+380,No barriers
+388,No barriers
+400,Modest barriers
+392,No barriers
+398,Significant obstacles
+404,Modest barriers
+417,No barriers
+410,No barriers
+414,Parties are not allowed
+418,Only governmentaffiliated parties
+422,No barriers
+434,Modest barriers
+426,No barriers
+440,No barriers
+442,No barriers
+428,No barriers
+446,No barriers
+504,No barriers
+498,No barriers
+450,No barriers
+462,Modest barriers
+484,No barriers
+466,No barriers
+470,No barriers
+104,Modest barriers
+499,No barriers
+496,No barriers
+508,No barriers
+478,Modest barriers
+480,No barriers
+454,No barriers
+458,No barriers
+516,No barriers
+566,No barriers
+558,Significant obstacles
+528,No barriers
+524,No barriers
+554,No barriers
+578,No barriers
+586,No barriers
+591,No barriers
+598,Modest barriers
+600,No barriers
+604,No barriers
+608,No barriers
+616,No barriers
+620,No barriers
+642,No barriers
+643,Modest barriers
+646,Significant obstacles
+678,No barriers
+688,Modest barriers
+694,No barriers
+702,Modest barriers
+703,No barriers
+705,No barriers
+90,No barriers
+706,No barriers
+710,No barriers
+724,No barriers
+729,Modest barriers
+740,No barriers
+752,No barriers
+756,No barriers
+760,Significant obstacles
+158,No barriers
+762,Only governmentaffiliated parties
+834,No barriers
+764,Significant obstacles
+626,No barriers
+768,No barriers
+780,No barriers
+788,No barriers
+792,Modest barriers
+795,Only governmentaffiliated parties
+800,Modest barriers
+804,Modest barriers
+826,No barriers
+840,No barriers
+858,No barriers
+860,Only governmentaffiliated parties
+548,No barriers
+862,Significant obstacles
+704,Parties are not allowed
+894,No barriers
+716,No barriers
