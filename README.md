@@ -13,13 +13,21 @@ Les données choisies sont assez variées mais possèdent toujours un lien avec 
 
 
 Le premier jeu de données indique si les pays sont membres de l'OCDE ou non.
+
 Le deuxième jeu de données indique le type de régime de chaque pays selon Freedom House (https://freedomhouse.org/)
+
 Le troisième jeu de données indique l'espérence de vie pour chaque pays.
+
 Le quatrième jeu de données le type de régime de chaque pays selon le projet en question.
+
 Le cinquième jeu de données indique comment se déroule les élections dans chaque pays.
+
 Le sixième jeu de données indique le mode d'élection à la chambre basse dans chaque pays.
+
 Le septième jeu de données indique le nombre de parties reprséentés dans le gouvernement de chaque pays.
+
 Le huitième jeu de données indique les barrières auquelles les partis font face dans chaque pays.
+
 
 Malgré le fait que les données sont intéressantes, elles sont malheureusment très incomplètes. Cela se reflète particulièrement sur certain jeux de données. 
 
