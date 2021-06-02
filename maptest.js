@@ -182,6 +182,30 @@ function init() {
     d3.select('#Information').on('change', function() {
         choice = d3.event.target.value;
         mapwithdata(choice);
+        if(choice==0){
+            document.getElementById("data").innerHTML="OCDE texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+        }
+        else if (choice==1){
+            document.getElementById("data").innerHTML="Regime FH texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+        }
+        else if (choice==2){
+            document.getElementById("data").innerHTML="Lige expectancy texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+        }
+        else if (choice==3){
+            document.getElementById("data").innerHTML="Regime texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+        }
+        else if (choice==4){
+            document.getElementById("data").innerHTML="Election texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+        }
+        else if (choice==5){
+            document.getElementById("data").innerHTML="Lower Chmamre texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+        }
+        else if (choice==6){
+            document.getElementById("data").innerHTML="Parti in Cabinet texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+        }
+        else if (choice==7){
+            document.getElementById("data").innerHTML="Barriers texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";   
+        }
     });
 }
 
