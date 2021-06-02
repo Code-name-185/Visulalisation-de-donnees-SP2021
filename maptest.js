@@ -54,7 +54,7 @@ const colorLegend = (selection, props) => {
             })
             .attr('dy', '0.32em')
             .attr('x', textOffset)
-            .style('font-size', "25px");
+            .style('font-size', "20px");
 
 };
 
@@ -75,10 +75,6 @@ const mapwithdata = (i) => {
     g.append('path')
         .attr('class', 'sphere')
         .attr('d', pathGenerator({type: 'Sphere'}));
-  
-    svg.call(d3.zoom().on('zoom', () => {
-        g.attr('transform', d3.event.transform);
-    }));
 
     Promise.all([
         d3.json('https://unpkg.com/world-atlas@1.1.4/world/50m.json'),
@@ -164,7 +160,7 @@ const mapwithdata = (i) => {
             circleRadius: 18,
             spacing: 40,
             textOffset: 24,
-            backgroundRectWidth: 350
+            backgroundRectWidth: 300
         });
 
         g.selectAll('path').data(countries.features)
