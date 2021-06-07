@@ -20,4 +20,5 @@ L'interface est principalement composée d'une carte choroplèthe pouvant affich
 ## Auteurs
 
 Milana Vladimirova, master DCS
+
 Valentin Mulder, master DCS
