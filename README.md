@@ -19,7 +19,8 @@ L'interface est principalement composée d'une carte choroplèthe pouvant affich
 
 ## Difficultés rencontrées
 
-La prise en mais de Javascript n'est pas évidente. En effet, il se différencie fortement, par sa syntaxe notamment, des autres langages que nous avons étudié. Le fait que le la librairie D3 évolue beaucoup peut aussi amener quelques soucis car les ressources que nous pouvons trouver ne sont pas toujours compatibles entre elles. 
+La prise en main de Javascript n'est pas évidente. En effet, il se différencie fortement, par sa syntaxe notamment, des autres langages que nous avons étudié. Le fait que la librairie D3 évolue beaucoup peut aussi amener quelques soucis car les ressources que nous pouvons trouver ne sont pas toujours compatibles entre elles. 
+Nous avons eu des difficultés au niveau des différentes versions de la map qui ne s'enlevaient pas et qui se chevauchaient, mais cela a été résolu en cours. D'autres difficultés étaient de nature générale car les langages avaient été appris en faisant le projet. 
 
 ## Auteurs
 
