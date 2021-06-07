@@ -98,7 +98,7 @@ p {
     position: absolute;
     left: 65%;
     margin-left: -3px;
-    top: 750px;
+    top: 850px;
 
 }
 
@@ -152,7 +152,7 @@ body {
   
   #Information {
     width: fit-content;
-    margin-left: 25px;
+    margin-left: 45px;
     font-size: 1em;
     text-align: center;
   }
