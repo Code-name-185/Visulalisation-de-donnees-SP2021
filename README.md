@@ -17,6 +17,10 @@ L'interface est principalement composée d'une carte choroplèthe pouvant affich
 ![image](https://user-images.githubusercontent.com/81250250/121051520-d157c700-c7b9-11eb-9486-40e4fd563156.png)
 
 
+## Difficultés rencontrées
+
+La prise en mais de Javascript n'est pas évidente. En effet, il se différencie fortement, par sa syntaxe notamment, des autres langages que nous avons étudié. Le fait que le la librairie D3 évolue beaucoup peut aussi amener quelques soucis car les ressources que nous pouvons trouver ne sont pas toujours compatibles entre elles. 
+
 ## Auteurs
 
 Milana Vladimirova, master DCS
