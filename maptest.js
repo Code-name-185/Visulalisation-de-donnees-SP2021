@@ -183,28 +183,28 @@ function init() {
         choice = d3.event.target.value;
         mapwithdata(choice);
         if(choice==0){
-            document.getElementById("data").innerHTML="OCDE texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+            document.getElementById("data").innerHTML="This shows the member states of the OECD. The main purpose of the OECD is to improve the global economy and promote world trade.<br>Even if a pattern emerges from this data, exceptions exist.";
         }
         else if (choice==1){
-            document.getElementById("data").innerHTML="Regime FH texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+            document.getElementById("data").innerHTML=" This shows states' types of regime according to Freedom house. It is is a non-profit non-governmental organization (NGO) that conducts research and advocacy on democracy, political freedom, and human rights.<br>Even if a pattern emerges from this data, exceptions exist.";
         }
         else if (choice==2){
-            document.getElementById("data").innerHTML="Lige expectancy texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+            document.getElementById("data").innerHTML="This shows life expectancy for each country. It can be an indicator of democraty's effects<br>Even if a pattern emerges from this data, exceptions exist.";
         }
         else if (choice==3){
-            document.getElementById("data").innerHTML="Regime texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+            document.getElementById("data").innerHTML="This shows more precisely the types of regimes in different states.<br>Even if a pattern emerges from this data, exceptions exist.";
         }
         else if (choice==4){
-            document.getElementById("data").innerHTML="Election texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+            document.getElementById("data").innerHTML="This shows how the elections are conducted in each country, if they are free and fair, or if it a bit more complicated than that.<br>Even if a pattern emerges from this data, exceptions exist.";
         }
         else if (choice==5){
-            document.getElementById("data").innerHTML="Lower Chmamre texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+            document.getElementById("data").innerHTML="This indicates the method of election to the lower house in each country.<br>Even if a pattern emerges from this data, exceptions exist.";
         }
         else if (choice==6){
-            document.getElementById("data").innerHTML="Parti in Cabinet texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";
+            document.getElementById("data").innerHTML="This gives an idea of the number of parties represented in the government of each country.<br>Even if a pattern emerges from this data, exceptions exist.";
         }
         else if (choice==7){
-            document.getElementById("data").innerHTML="Barriers texte à rajouter<br>Even if a pattern emerges from this data, exceptions exist.";   
+            document.getElementById("data").innerHTML="This gives an idea of the barriers that parties face in each country.<br>Even if a pattern emerges from this data, exceptions exist.";   
         }
     });
 }
